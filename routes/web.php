@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\rogzites;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/', [rogzites::class,"getContent"]);
+Route::POST('/', [rogzites::class,"rogzit"]);
 Route::get('/', function () {
     return view('welcome');
-});
+}); 

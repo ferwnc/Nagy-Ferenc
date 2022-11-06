@@ -24,12 +24,14 @@ class rogzit extends Controller
                 ],
                 
                 [
-                    "vnev.required" => "Add meg a vezetékneved!",
-                    "vnev.text" => "Csak szöveget írhatsz",
-                    "knev.required" => "Add meg a keresztneved!",
-                    "knev.text" => "Csak szöveget írhatsz",
-                    "szev.required" => "Add meg a születési éved!",
-                    "szev.numeric" => "Csak számot írhatsz"
+                    "vnev.required" => "Adja meg a vezetéknevét!",
+                    "vnev.text" => "Ide csak szöveget írhat!",
+                   
+                    "knev.required" => "Adja meg a keresztnevét!",
+                    "knev.text" => "Ide csak szöveget írhat!",
+                    
+                    "szev.required" => "Adja meg a születési évét!",
+                    "szev.numeric" => "Csak számot adhat meg!"
     
                 ]
             );
@@ -40,6 +42,6 @@ class rogzit extends Controller
             $req->get('szev'),
             ]);
     
-            return redirect("/rogzites")->with("success","Az adatokat sikeresen rögzítettük!");
+            return redirect("/rogzit")->with("success","Az adatok rögzítése sikeres!");
         }
 }
