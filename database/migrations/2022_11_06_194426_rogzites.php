@@ -13,7 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('Adatok', function(Blueprint $table){
+            $table ->string('vnev');
+            $table ->string('knev');
+            $table ->int('szev');
+        });
     }
 
     /**
