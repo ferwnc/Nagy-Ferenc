@@ -15,42 +15,24 @@
                 <div class="mt-3 mb-3">
                     <label for="vnev">Vezetéknév: </label>
                     <input type="text" name="vnev" value="{{old('vnev')}}" id="vnev" class="form-control">
-                    @error('vnev')
-                    <div class="alert alert-danger">
-                        {{$message}}
-                    </div>
-                @enderror
+
                 </div>
-                
                 
                 
                 <div class="mt-3 mb-3">
                     <label for="knev">Keresztnév: </label>
                     <input type="text" name="knev" value="{{old('knev')}}" id="knev" class="form-control">
-                    @error('knev')
-                    <div class="alert alert-danger">
-                        {{$message}}
-                    </div>
-                @enderror
+
                 </div>
-                
-                
-                
+
                 
                 <div class="mt-3 mb-3">
                     <label for="szev">Születési év: </label>
                     <input type="number" name="szev" value="{{old('szev')}}" id="szev" class="form-control">
-                    @error('szev')
-                    <div class="alert alert-danger">
-                        {{$message}}
-                    </div>
-                @enderror
+
                 </div>
                
-               
-               
-               
-               
+
                 <div class="mt-3 mb-3">
                     <button type="submit" class="btn btn-light">Bekerülök a rendszerbe</button>
                 </div>
