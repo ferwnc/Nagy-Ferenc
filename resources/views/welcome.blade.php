@@ -3,5 +3,5 @@
 @section("title","Regisztráció")
 
 @section("content")
-    @include("rogzites")
+    @include("rogzit")
 @endsection
