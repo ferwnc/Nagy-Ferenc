@@ -34,7 +34,7 @@
                
 
                 <div class="mt-3 mb-3">
-                    <button type="submit" class="btn btn-light">Bekerülök a rendszerbe</button>
+                    <button type="submit" class="btn btn-light">Adatok rögzítése</button>
                 </div>
            
             </form>
